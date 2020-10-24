@@ -21,6 +21,6 @@ git push origin originName
 git pull origin DeveloperOriginName
 
 */
-
+import css from '../../css/HabitInfo.css'
 import data from "../../store"
 console.log("HABIT INFO", data);
