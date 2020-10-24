@@ -4,4 +4,4 @@
 
 */
 import data from "../../store"
-console.log(data);
+console.log("HABIT INFO",data);
