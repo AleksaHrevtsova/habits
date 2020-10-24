@@ -1,7 +1,7 @@
 /*  Разрабы этого файла  : !!!!
-Илья Дмитренко
-Данил Пащенко              
-
+Илья Дмитренко ()- 2 кнопки удаления* график * прогрес *
+Данил Пащенко (danilPaschenko_HabitPage)- кнопки *назад* и *далее* / календарь 
+Имена переменных 
+habitInfo_letName
 */
-import data from "../../store"
-console.log("HABIT INFO",data);
+console.log("HABIT INFO", data);
