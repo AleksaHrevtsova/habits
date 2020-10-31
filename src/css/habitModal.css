@@ -1,27 +1,27 @@
 /* ето переменная! и если изменить переменную то изменится основной цвет страницы  */
-:root{
-  --main-color:  #390093;
+:root {
+  --main-color: #390093;
 }
 
-html{
+html {
   margin: 0;
 }
 
-body{
+body {
   background-color: white;
-  color:var(--main-color);
+  color: var(--main-color);
   margin: 0;
 }
 
-header{
-  background-color:var(--main-color);
+header {
+  background-color: var(--main-color);
   color: #fff;
   height: 100%;
 }
 
 /* heder */
 
-#headerText{
+#headerText {
   size: 30px;
   display: flex;
   justify-content: space-between;
@@ -29,15 +29,15 @@ header{
   margin: 0 25px;
 }
 
-#headerText p{
+#headerText p {
   rotate: 45;
 }
 
-#inputHabit{
+#inputHabit {
   width: 100%;
 }
 
-#nameOfhabit{
+#nameOfhabit {
   margin: 0 25px;
   padding-bottom: 15px;
   display: flex;
@@ -46,33 +46,95 @@ header{
   justify-self: center;
 }
 
-#nameOfhabit input{
-  background-color:var(--main-color);
+#nameOfhabit input {
+  background-color: var(--main-color);
   text-decoration: none;
   border: none;
 }
 
-#nameOfhabit input:focus{
+#nameOfhabit input:focus {
   /* нужно найти документацыю "как сделать инпут без обвотки" */
 }
 
-#nameOfhabitUnderline{
+#nameOfhabitUnderline {
   width: 100%;
   height: 1px;
   background: #fff;
 }
 
-#nameOfhabit div{
+#nameOfhabit div {
   width: 100%;
 }
 
-#nameOfhabit p{
+#nameOfhabit p {
   margin-bottom: 5px;
+}
+
+
+/* код ниже взят с сайта генератора кнопок */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 23px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color:var(--main-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--main-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
 }
 
 /* main */
 
-#main{
+#main {
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -81,52 +143,61 @@ header{
   height: auto;
 }
 
-.main_div{
+.main_div {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
 }
 
-.main_div p{
+.main_div p {
   margin-bottom: 2px;
   margin-top: 30px;
 }
 
-.inputUnderline{
+.inputUnderline {
   width: 100%;
   height: 1px;
   background: #d4d4d4;
 }
 
-.inputStyle{
+.inputStyle {
   height: 15px;
   margin-bottom: 2px;
   text-decoration: none;
   border: none;
 }
 
-#MotivateMyself{
+#reapitMesenge{
+  width: 120px;
+  color: var(--main-color);
+}
+
+#reapitMesenge option{
+  color: var(--main-color);
+}
+
+#MotivateMyself {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
-#MotivateMyself p{
+#MotivateMyself p {
   margin-bottom: 2px;
   margin-top: 15px;
 }
 
 /* footer */
 
-footer{
+footer {
   display: flex;
   justify-content: center;
   margin-top: 20%;
 }
 
-footer button{
-  border: solid  #d4d4d4 1px;
+footer button {
+  border: solid #d4d4d4 1px;
   padding: 10px 90px;
   border-radius: 30px;
   color: var(--main-color);

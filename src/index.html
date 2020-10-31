@@ -33,7 +33,12 @@
 
     <div class="main_div">
       <p>Повторять</p>
-      <input class="inputStyle" id="reapitMesenge" type="text" placeholder="Каждый день >">
+      <!-- документацыя по роботе з select
+      https://metanit.com/web/javascript/10.5.php -->
+      <select id="reapitMesenge">
+        <option>каждый день</option>
+        <option>каждый час</option>
+      </select>
     </div>
     <div class="inputUnderline"></div>
 
@@ -45,7 +50,10 @@
 
     <div class="main_div">
       <p>Напомнить мне</p>
-      <input class="inputStyle" type="checkbox" checked data-toggle="toggle">
+      <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+      </label>
     </div>
     <div class="inputUnderline"></div>
 
@@ -53,8 +61,9 @@
 
   <footer>
     <button>Сохранить</button>
-  </footer>
 
+  </footer>
+<!-- <img src="./images/mobile/bottom-lines.png" alt=""> -->
 </body>
 
 </html>
