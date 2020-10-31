@@ -222,6 +222,7 @@ footer button {
   padding: 10px 90px;
   border-radius: 30px;
   color: var(--main-color);
+  outline: 0;
 }
 
 @media only screen and (max-width: 280px){
