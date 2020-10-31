@@ -8,6 +8,10 @@
 </head>
 
 <body>
+  <div id="header_desktop">
+    <p>Mой аккаунт</p>
+  </div>
+  <div id="bodyForDesktop">
   <header>
     <div>
       <div id="headerText">
@@ -16,7 +20,7 @@
       </div>
       <div id="nameOfhabit">
         <p>Название</p>
-        <div>
+        <div id="divInputHabit">
           <input id="inputHabit" type="text" placeholder="Зарядка">
           <div id="nameOfhabitUnderline"></div>
         </div>
@@ -24,46 +28,47 @@
     </div>
   </header>
 
-  <main id="main">
-    <div id="MotivateMyself">
-      <p>Мотивирую себя</p>
-      <input class="inputStyle" type="text" placeholder="...">
+  <div id="mainForDesktop">
+      <main id="main">
+        <div id="MotivateMyself">
+          <p>Мотивирую себя</p>
+          <input class="inputStyle" type="text" placeholder="...">
+        </div>
+        <div class="inputUnderline"></div>
+
+        <div class="main_div">
+          <p>Повторять</p>
+          <!-- документацыя по роботе з select
+          https://metanit.com/web/javascript/10.5.php -->
+          <select id="reapitMesenge">
+            <option>каждый день</option>
+            <option>каждый час</option>
+          </select>
+        </div>
+        <div class="inputUnderline"></div>
+
+        <div class="main_div">
+          <p>Выберете цвет</p>
+          <input class="inputStyle" type="text" placeholder="color">
+        </div>
+        <div class="inputUnderline"></div>
+
+        <div class="main_div" id="repit">
+          <p>Напомнить мне</p>
+          <label class="switch">
+            <input type="checkbox">
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <div class="inputUnderline"></div>
+
+      </main>
+
+      <footer>
+        <button>Сохранить</button>
+      </footer>
     </div>
-    <div class="inputUnderline"></div>
-
-    <div class="main_div">
-      <p>Повторять</p>
-      <!-- документацыя по роботе з select
-      https://metanit.com/web/javascript/10.5.php -->
-      <select id="reapitMesenge">
-        <option>каждый день</option>
-        <option>каждый час</option>
-      </select>
-    </div>
-    <div class="inputUnderline"></div>
-
-    <div class="main_div">
-      <p>Выберете цвет</p>
-      <input class="inputStyle" type="text" placeholder="color">
-    </div>
-    <div class="inputUnderline"></div>
-
-    <div class="main_div">
-      <p>Напомнить мне</p>
-      <label class="switch">
-        <input type="checkbox">
-        <span class="slider round"></span>
-      </label>
-    </div>
-    <div class="inputUnderline"></div>
-
-  </main>
-
-  <footer>
-    <button>Сохранить</button>
-
-  </footer>
-<!-- <img src="./images/mobile/bottom-lines.png" alt=""> -->
+  </div>
 </body>
 
 </html>
