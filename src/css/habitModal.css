@@ -325,4 +325,8 @@ footer button {
   #mainForDesktop{
     width: 400px;
   }
+
+  #MotivateMyself p{
+    margin-bottom: 30px;
+  }
 }
