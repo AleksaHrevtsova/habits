@@ -3,6 +3,8 @@
   --main-color: #390093;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
 html {
   margin: 0;
 }
@@ -11,6 +13,8 @@ body {
   background-color: white;
   color: var(--main-color);
   margin: 0;
+  font-family: 'Montserrat';
+  font-size: 16px;
 }
 
 header {
@@ -29,8 +33,13 @@ header {
   margin: 0 25px;
 }
 
-#headerText p {
-  rotate: 45;
+#headerName{
+  font-size: 25px;
+}
+
+#plas{
+  transform: rotate(45deg);
+  font-size: 20px;
 }
 
 #inputHabit {
@@ -169,12 +178,16 @@ input:checked + .slider:before {
 }
 
 #reapitMesenge{
-  width: 120px;
+  width: 140px;
   color: var(--main-color);
+  font-family: 'Montserrat';
+  font-size: 16px;
 }
 
 #reapitMesenge option{
   color: var(--main-color);
+  border: none;
+  text-decoration: none;
 }
 
 #MotivateMyself {
