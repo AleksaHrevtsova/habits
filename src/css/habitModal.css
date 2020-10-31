@@ -44,6 +44,8 @@ header {
 
 #inputHabit {
   width: 100%;
+  font-family: 'Montserrat';
+  color: #fff;
 }
 
 #nameOfhabit {
@@ -62,7 +64,8 @@ header {
 }
 
 #nameOfhabit input:focus {
-  /* нужно найти документацыю "как сделать инпут без обвотки" */
+  outline: 0;
+  outline-offset: 0;
 }
 
 #nameOfhabitUnderline {
@@ -175,6 +178,10 @@ input:checked + .slider:before {
   margin-bottom: 2px;
   text-decoration: none;
   border: none;
+  font-family: 'Montserrat';
+  color: var(--main-color);
+  outline: 0;
+  outline-offset: 0;
 }
 
 #reapitMesenge{
@@ -206,7 +213,7 @@ input:checked + .slider:before {
 footer {
   display: flex;
   justify-content: center;
-  margin-top: 20%;
+  margin-top: 100px;
 }
 
 footer button {
@@ -214,4 +221,21 @@ footer button {
   padding: 10px 90px;
   border-radius: 30px;
   color: var(--main-color);
+}
+
+@media only screen and (max-width: 280px){
+  body{
+      width: 280px;
+  }
+}
+
+@media only screen and (min-width: 700px){
+  #main{
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  #nameOfhabit{
+    width: 535px;
+  }
 }
