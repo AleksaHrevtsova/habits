@@ -1,6 +1,8 @@
 /* ето переменная! и если изменить переменную то изменится основной цвет страницы  */
 :root {
   --main-color: #390093;
+  /* нужно изменять только --main-bg-color */
+  --main-bg-color:#390093;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
@@ -18,7 +20,7 @@ body {
 }
 
 header {
-  background-color: var(--main-color);
+  background-color: var(--main-bg-color);
   color: #fff;
   height: 100%;
 }
@@ -59,7 +61,7 @@ header {
 }
 
 #nameOfhabit input {
-  background-color: var(--main-color);
+  background-color: var(--main-bg-color);
   text-decoration: none;
   border: none;
 }
@@ -200,7 +202,7 @@ input:checked + .slider:before {
   width: 10px;
   height: 10px;
   border-radius: 50px;
-  background-color: var(--main-color);
+  background-color: var(--main-bg-color);
   outline: 0;
 }
 
