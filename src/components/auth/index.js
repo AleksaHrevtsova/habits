@@ -1,2 +1,2 @@
-import store from '../../store'
-console.log(store)
+// import store from '../../store'
+// console.log(store)
