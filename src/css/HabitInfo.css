@@ -82,42 +82,41 @@
         padding: 15px;
         width: 300px;
     }
-    #habitInfo_calendar_table {
-        margin:auto;
-        width: 25%;
+    #habitInfo_table_calendar {
+        margin:10px auto;
+        width: 85%;
         text-align: center;
       }
-      #habitInfo_calendar_table thead tr:last-child {
-        font-size: 10px;
+      #habitInfo_table_calendar thead tr:last-child {
+        font-size: 15px;
       line-height: 10px;
       color: #4b2486;
       font-family: "Myriad Pro";
       text-align: center;
+
       }
-      #habitInfo_calendar_table thead tr:nth-child(1) td:nth-child(1):hover, #habitInfo_calendar_table thead tr:nth-child(1) td:nth-child(3):hover {
+      #habitInfo_table_calendar thead tr:nth-child(1) td:nth-child(1):hover, #habitInfo_calendar_table thead tr:nth-child(1) td:nth-child(3):hover {
         cursor: pointer;
       }
-      #habitInfo_calendar_table thead tr:nth-child(1) td:nth-child(2) {
-        font-size: 18px;
+      #habitInfo_table_calendar thead tr:nth-child(1) td:nth-child(2) {
+        font-size: 30px;
         color: #400688;
         font-family: "Candara";
       }
-      #habitInfo_calendar_table tbody td {
-        font-size: 12px;
+      #habitInfo_table_calendar tbody td {
+        font-size: 15px;
       line-height: 12px;
       color: #6e6767;
       font-family: "Myriad Pro";
       text-align: center;
 
       }
-      #habitInfo_calendar_table tbody td:nth-child(n+6), #calendar2 .holiday {
+      #habitInfo_table_calendar tbody td:nth-child(n+6), #calendar2 .holiday {
         color: rgb(231, 140, 92);
       }
-      #habitInfo_calendar_table tbody td.today {
+      #habitInfo_table_calendar tbody td.today {
         width: 12px;
-
         background: #400688;
-
         border:#400688 solid 5px;
         border-radius: 400px;
         color: #fff;
@@ -134,7 +133,11 @@
     .habitInfo-deleteButton {
         margin-right: 35px;
     }
-
+    #habitInfo_table_calendar {
+        margin:10px auto;
+        width: 60%;
+        text-align: center;
+      }
 
     /* media */
 }
