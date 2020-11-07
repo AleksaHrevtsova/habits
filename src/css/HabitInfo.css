@@ -32,7 +32,7 @@
     .habitInfo-button {
         font-size: 14px;
         display: inline-block;
-        margin: 20px 0 0 20px;
+        margin: 20px 5% 0 5%;
         color: #ffffff;
         background-color: rgba(255, 255, 255, 0);
         border: none;
@@ -94,16 +94,27 @@
     .habitInfo-deleteButton {
         margin-right: 35px;
     }
-
-
+    
+    
     /* media */
 }
 
 @media screen and (min-width: 1920px) {
+    #habitInfo_header{
+        height: 100px;
+    }
+    #habitInfo_habitName{
+        font-size: 32px;
+        margin: 28px 0 0 0;
+    }
     #habitInfo_main-title {
         padding: 0 0 8% 0;
     }
-
+    .habitInfo-button{
+        margin: 1% 20% 0 20%;
+        font-size: 25px;
+    }
+    
 
     /* media */
 }
