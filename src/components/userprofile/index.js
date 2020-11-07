@@ -1,3 +1,5 @@
+import css from "../../css/style.css";
+
 // ====================== renata
 
 let goBack = document.querySelector(".s8_like_plusik");
@@ -12,11 +14,13 @@ console.log(delButton);
 
 const users1 = [{ id: "1" }];
 
+
+
 // создаем прослушку для кнопки удалить
 function removeChild(id) {
-  if(users1.filter(users1.id === id)) {
-    users1.remove();
-   };
+  users1.filter((user, index) =>{ user.id === id
+    users1.splice(index, 1);
+  });
 };
 delButton.addEventListener("click", removeChild);
 
@@ -45,5 +49,3 @@ const startDay = new Date('Oct 30 2020')
 
 const myHabit = new Habit(startDay, 21)
 console.log(myHabit)
-
-// 
