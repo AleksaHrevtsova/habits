@@ -1,4 +1,17 @@
-body {
-  background-color: black;
-  color: wheat;
+.container {
+  margin-left: 955px;
+  line-height: 3;
+}
+.b1{
+  border: medium none;
+  background-image: none;
+  background: transparent;
+  float: left;
+  background-color: transparent;
+  color: aliceblue;
+}
+.textonimg {
+  margin-top: 300px;
+  position: absolute;
+  color: antiquewhite;
 }
