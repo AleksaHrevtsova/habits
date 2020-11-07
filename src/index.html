@@ -8,8 +8,31 @@
 </head>
 
 <body>
-  <header>Hello World!</header>
-  <main></main>
+  <header>
+    <div class="user_photo">
+      <button id="photo-upload" type="file" accept="image/*"><img src="images/camera.png" alt=""></button>
+      <span class="header_photo">Сменить фото</span>
+    </div>
+  </header>
+  <main>
+    <form action="">
+      <div class="inputs_data">
+        <div class="data_group">
+          <span class="form_inputs-text">Рост*</span>
+          <input class="form-inputs" id="growth-input" type="number" placeholder="170 см" required>
+        </div>
+        <div class="data_group">
+          <span class="form_inputs-text">Вес*</span>
+          <input class="form-inputs" id="weight-input" type="number" placeholder="50 кг" required>
+        </div>
+        <div class="data_group">
+          <span class="form_inputs-text">Дата Рождения*</span>
+          <input class="form-inputs" id="birth-input" type="date" placeholder="25. 09. 1986" required>
+        </div>
+      </div>
+      <button class="create-btn">Создать</button>
+    </form>
+  </main>
   <footer></footer>
 </body>
 

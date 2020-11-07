@@ -1,3 +1,6 @@
-import css from '../../css/userprofile.css'
+import "../../css/userprofile.css"
 
-console.log(1337);
+// const growthInput = document.getElementById("growth-input"),
+//   weightInput = document.getElementById("weight-input"),
+//   birthInput = document.getElementById("birth-input"),
+//   createBtn = document.getElementById("create-btn");

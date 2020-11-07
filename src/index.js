@@ -1,3 +1,2 @@
-import css from "./css/style.css";
+import css from "./css/userprofile.css";
 import profile from './components/userprofile/index'
-import './components/auth'
