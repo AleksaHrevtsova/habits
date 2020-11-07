@@ -1,3 +1,8 @@
+
+import css from '../../css/userprofile.css'
+
+console.log(1337);
+
 // ====================== renata
 
 let goBack = document.querySelector(".s8_like_plusik");
@@ -47,3 +52,4 @@ const myHabit = new Habit(startDay, 21)
 console.log(myHabit)
 
 // 
+
