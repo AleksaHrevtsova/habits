@@ -1,0 +1,109 @@
+/*  Разрабы этого файла  : !!!!
+Данил Пащенко              
+Илья Дмитренко
+
+*/
+@media screen and (min-width: 320px) {
+    #habitInfo_cover {
+        position: relative;
+        color: black;
+        width: 100%;
+        height: 550px;
+        background-color: #ffff;
+
+    }
+
+    #habitInfo_header {
+        text-align: center;
+        height: 65px;
+        border: none;
+
+        background: rgb(113, 79, 169);
+        background: linear-gradient(90deg, rgb(113, 79, 169) 0%, rgba(188, 129, 213, 1) 100%);
+
+        -webkit-border-bottom-right-radius: 10px;
+        -webkit-border-bottom-left-radius: 10px;
+        -moz-border-radius-bottomright: 10px;
+        -moz-border-radius-bottomleft: 10px;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+    }
+
+    .habitInfo-button {
+        font-size: 14px;
+        display: inline-block;
+        margin: 20px 0 0 20px;
+        color: #ffffff;
+        background-color: rgba(255, 255, 255, 0);
+        border: none;
+
+    }
+
+    #habitInfo_habitName {
+        color: #ffffff;
+        display: inline-block;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 20px 0 20px
+    }
+
+    #habitInfo_main {
+        text-align: center;
+    }
+
+    #habitInfo_main-title {
+        font-size: 19px;
+        font-weight: bold;
+        padding-bottom: 30%;
+    }
+
+    #habitInfo_main-progress {
+        font-size: 45px;
+    }
+
+    #habitInfo_footer {
+        position: absolute;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        bottom: 0px;
+        width: 100%;
+    }
+
+    .habitInfo-deleteButton {
+        color: #400688;
+        display: block;
+        background-color: rgba(255, 255, 255, 0.1);
+        margin: 5px 0 10px 0;
+        border: none;
+        border: 1px solid #000000;
+        border-radius: 35px;
+        padding: 15px;
+        width: 300px;
+    }
+
+    /* media */
+}
+
+@media screen and (min-width: 720px) {
+    #habitInfo_main-title {
+        padding: 0 0 15% 0;
+    }
+
+    .habitInfo-deleteButton {
+        margin-right: 35px;
+    }
+
+
+    /* media */
+}
+
+@media screen and (min-width: 1920px) {
+    #habitInfo_main-title {
+        padding: 0 0 8% 0;
+    }
+
+
+    /* media */
+}
