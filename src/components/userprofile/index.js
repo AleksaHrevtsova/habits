@@ -1,4 +1,15 @@
+
 import css from "../../css/style.css";
+
+
+// const growthInput = document.getElementById("growth-input"),
+//   weightInput = document.getElementById("weight-input"),
+//   birthInput = document.getElementById("birth-input"),
+//   createBtn = document.getElementById("create-btn");
+
+import css from '../../css/userprofile.css'
+
+
 
 // ====================== renata
 
@@ -48,4 +59,11 @@ class Habit  {
 const startDay = new Date('Oct 30 2020')
 
 const myHabit = new Habit(startDay, 21)
+
 console.log(myHabit)
+
+console.log(myHabit)
+
+//
+
+
