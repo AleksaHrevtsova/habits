@@ -79,6 +79,7 @@ font-weight:bold;
 }
 
 body {
+  margin: 0;
   background-color: black;
   color: #ffffff;
   font-size: 30px;
