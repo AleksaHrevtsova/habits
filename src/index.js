@@ -1,3 +1,5 @@
+import css from "./css/userprofile.css";
+import profile from './components/userprofile/index'
 import css from "./css/style.css";
 
 import profile from './components/userprofile/index'

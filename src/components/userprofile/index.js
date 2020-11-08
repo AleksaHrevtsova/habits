@@ -1,7 +1,11 @@
 
+// const growthInput = document.getElementById("growth-input"),
+//   weightInput = document.getElementById("weight-input"),
+//   birthInput = document.getElementById("birth-input"),
+//   createBtn = document.getElementById("create-btn");
+
 import css from '../../css/userprofile.css'
 
-console.log(1337);
 
 // ====================== renata
 
@@ -51,5 +55,5 @@ const startDay = new Date('Oct 30 2020')
 const myHabit = new Habit(startDay, 21)
 console.log(myHabit)
 
-// 
+//
 
