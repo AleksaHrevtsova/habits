@@ -1,0 +1,347 @@
+/* ето переменная! и если изменить переменную то изменится основной цвет страницы  */
+:root {
+  --main-color: #390093;
+  /* нужно изменять только --main-bg-color */
+  --main-bg-color:#390093;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+html {
+  margin: 0;
+}
+
+body {
+  background-color: white;
+  color: var(--main-color);
+  margin: 0;
+  font-family: 'Montserrat';
+  font-size: 16px;
+}
+
+header {
+  background-color: var(--main-bg-color);
+  color: #fff;
+  height: 100%;
+}
+
+/* heder */
+
+#headerText {
+  size: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 25px;
+}
+
+#headerName{
+  font-size: 25px;
+}
+
+#plas{
+  transform: rotate(45deg);
+  font-size: 30px;
+  margin: 0;
+}
+
+#inputHabit {
+  width: 100%;
+  font-family: 'Montserrat';
+  color: #fff;
+}
+
+#nameOfhabit {
+  margin: 0 25px;
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-self: center;
+}
+
+#nameOfhabit input {
+  background-color: var(--main-bg-color);
+  text-decoration: none;
+  border: none;
+}
+
+#nameOfhabit input:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
+#nameOfhabitUnderline {
+  width: 100%;
+  height: 1px;
+  background: #fff;
+}
+
+#nameOfhabit div {
+  width: 100%;
+}
+
+#nameOfhabit p {
+  margin-bottom: 5px;
+}
+
+
+/* код ниже взят с сайта генератора кнопок */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 23px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 15px;
+  width: 15px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color:var(--main-color);
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px var(--main-color);
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* main */
+
+#main {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: stretch;
+  margin: 0 25px;
+  height: auto;
+}
+
+.main_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.main_div p {
+  margin-bottom: 2px;
+  margin-top: 30px;
+}
+
+.inputUnderline {
+  width: 100%;
+  height: 1px;
+  background: #d4d4d4;
+}
+
+.inputStyle {
+  height: 15px;
+  margin-bottom: 2px;
+  text-decoration: none;
+  border: none;
+  font-family: 'Montserrat';
+  color: var(--main-color);
+  outline: 0;
+  outline-offset: 0;
+}
+
+#reapitMesenge{
+  width: 140px;
+  color: var(--main-color);
+  font-family: 'Montserrat';
+  font-size: 16px;
+  outline: 0;
+  outline-offset: 0;
+  border: none;
+}
+
+#color{
+  border: none;
+  padding: 10px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: var(--main-bg-color);
+  outline: 0;
+}
+
+#reapitMesenge option{
+  color: var(--main-color);
+  border: none;
+  text-decoration: none;
+}
+
+#MotivateMyself {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#MotivateMyself p {
+  margin-bottom: 2px;
+  margin-top: 15px;
+}
+
+/* footer */
+
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+footer button {
+  border: solid #d4d4d4 1px;
+  padding: 10px 90px;
+  border-radius: 30px;
+  color: var(--main-color);
+  outline: 0;
+}
+
+@media only screen and (max-width: 280px){
+  body{
+      width: 280px;
+  }
+}
+
+@media only screen and (min-width: 700px){
+  #main{
+    width: 450px;
+    margin: 0 auto;
+  }
+
+  #nameOfhabit{
+    width: 535px;
+  }
+}
+
+/* for desktop */
+#header_desktop{
+  display: none;
+  height: 50px;
+  background: linear-gradient(90deg, rgba(106,82,165,1) 0%, rgba(173,129,209,1) 100%);
+}
+
+#header_desktop p{
+  margin: 0;
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (min-width: 1480px){
+  #header_desktop{
+    display: flex;
+  }
+
+  body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  #bodyForDesktop{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: baseline;
+    margin-top: 50px;
+  }
+
+  header{
+    width: 450px;
+    height: 450px;
+    border-radius: 20px;
+  }
+
+  header div{
+    height: 300px;
+  }
+
+  #nameOfhabit div{
+    width: auto;
+  }
+
+  #nameOfhabit p{
+    display: none;
+    margin: 0;
+    width: 0;
+    height: 0;
+  }
+
+  #inputHabit{
+    width: 400px;
+  }
+
+  .main_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .main_div p{
+    margin-bottom: 30px;
+  }
+
+  #repit{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+
+  #divInputHabit{
+    display: inline;
+    height: auto;
+  }
+
+  #mainForDesktop{
+    width: 400px;
+  }
+
+  #MotivateMyself p{
+    margin-bottom: 30px;
+  }
+}

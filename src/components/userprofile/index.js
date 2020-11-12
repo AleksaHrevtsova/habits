@@ -1,3 +1,4 @@
+
 import css from "../../css/style.css";
 
 //  ====================== renata
@@ -27,6 +28,7 @@ function handleFiles(event) {
   }
 }
 
+
 // =========================================  кнопка создать ====================
 let createButton =document.querySelector('.create-btn');
 createButton.addEventListener('click', createFile, false)
@@ -34,4 +36,4 @@ createButton.addEventListener('click', createFile, false)
     let growth = document.getElementById('growth-input').value;
     let weight = document.getElementById('weight-input').value;
     let dateOfBirth = document.getElementById('birth-input').value;
-  }
+}
