@@ -163,45 +163,63 @@
     </div>
   </header>
 
-  <div id="mainForDesktop">
-      <main id="main">
-        <div id="MotivateMyself">
-          <p>Мотивирую себя</p>
-          <input class="inputStyle" type="text" placeholder="...">
+  <div id="close">
+    <header>
+
+        <div id="head_wrapper">
+            <p>Новая привычка</p>
+            <span id="closeModal">&times;</span>
         </div>
-        <div class="inputUnderline"></div>
-
-        <div class="main_div">
-          <p>Повторять</p>
-          <select id="reapitMesenge">
-            <option>каждый день</option>
-            <option>каждый час</option>
-          </select>
+        <div id="habitName" class="input_modal">
+            <label for="text" id='input_label_forHead' class="color: white;">Название</label>
+            <input type="text" id="modalInpName">
         </div>
-        <div class="inputUnderline"></div>
+    </header>
 
-        <div class="main_div">
-          <p>Выберете цвет</p>
-          <input type="color" id="color" value="#390093">
+    <main>
+
+        <div id="mainForDesktop">
+            <main id="main">
+              <div id="MotivateMyself">
+                <p>Мотивирую себя</p>
+                <input class="inputStyle" type="text" placeholder="..." id="modalInpTxt">
+              </div>
+              <div class="inputUnderline"></div>
+
+              <div class="main_div">
+                <p>Повторять</p>
+                <select id="reapitMesenge">
+                  <option value="everyDay">каждый день</option>
+                  <option value="everyHour">каждый час</option>
+                </select>
+              </div>
+              <div class="inputUnderline"></div>
+
+              <div class="main_div">
+                <p>Выберете цвет</p>
+                <input type="color" id="inpColor" value="#390093">
+              </div>
+              <div class="inputUnderline"></div>
+
+              <div class="main_div" id="repit">
+                <p>Напомнить мне</p>
+                <label class="switch">
+                  <input type="checkbox" id="switchInp">
+                  <span class="slider round"></span>
+                </label>
+              </div>
+              <div class="inputUnderline"></div>
+
+            </main>
+
+            <footer>
+              <button id="submit">Сохранить</button>
+            </footer>
+          </div>
         </div>
-        <div class="inputUnderline"></div>
 
-        <div class="main_div" id="repit">
-          <p>Напомнить мне</p>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <div class="inputUnderline"></div>
 
-      </main>
-
-      <footer>
-        <button>Сохранить</button>
-      </footer>
-    </div>
-  </div>
+</div>
 
   <header></header>
   <main>

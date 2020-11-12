@@ -1,5 +1,4 @@
 
-import css from "../../css/style.css";
 
 
 // const growthInput = document.getElementById("growth-input"),
