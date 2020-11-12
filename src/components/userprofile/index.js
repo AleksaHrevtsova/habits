@@ -1,69 +1,40 @@
 
-import css from "../../css/style.css";
+import  "../../css/style.css";
 
+//  ====================== renata
 
-// const growthInput = document.getElementById("growth-input"),
-//   weightInput = document.getElementById("weight-input"),
-//   birthInput = document.getElementById("birth-input"),
-//   createBtn = document.getElementById("create-btn");
-
-import css from '../../css/userprofile.css'
-
-
-
-// ====================== renata
-
-let goBack = document.querySelector(".s8_like_plusik");
-goBack.addEventListener("click", () => {
-  window.history.go(-1);
-});
-console.log(goBack);
-// ===============================================================
-
-let delButton = document.querySelector(".s8_btn_btr");
-console.log(delButton);
-
-const users1 = [{ id: "1" }];
-
-
-
-// создаем прослушку для кнопки удалить
-function removeChild(id) {
-  users1.filter((user, index) =>{ user.id === id
-    users1.splice(index, 1);
-  });
-};
-delButton.addEventListener("click", removeChild);
-
-// ===============================================================
-
-let elem = document.getElementById("myBar");
-let startDate = Date.now();
-console.log(startDate)
-class Habit  {
-   constructor(startDate, period){
-     this.startDate = +startDate;
-     this.period = period;
-     this._currentDay = 0;
-     this._progress = 0;
-     }
-     toSetCurrentDay(){
-    let todayDate = Date.now();
-    this.currentDay = (todayDate - this.startDate)/1000/60/60/24;
-    return this._currentDay
+const upload = document.getElementById('photo-upload');
+const avatar = document.querySelector(".user_photo");
+const preview = document.getElementById("preview");
+let imageType = /^image\//;
+upload.addEventListener("change", handleFiles, false);
+function handleFiles(event) {
+  let file = event.target.files[0];
+  console.log(event.target)
+  if (!imageType.test(file.type)) {
+    avatar.classList.add("avatar--upload-error");
+    setTimeout(function(){
+      avatar.classList.remove("avatar--upload-error");
+    },1200);
   }
-  get currentDay(){
-    return this._currentDay
+
+  avatar.classList.remove("avatar--upload-error");
+
+  let img = document.getElementById("avatarimage");
+  console.log(img)
+  img.src = window.URL.createObjectURL(file);
+  img.onload = function() {
+    window.URL.revokeObjectURL(this.src);
   }
 }
-const startDay = new Date('Oct 30 2020')
-
-const myHabit = new Habit(startDay, 21)
-
-console.log(myHabit)
-
-console.log(myHabit)
-
-//
 
 
+// =========================================  кнопка создать ====================
+let createButton =document.querySelector('.create-btn');
+createButton.addEventListener('click', createFile, false)
+  function createFile(event) {
+    let growth = document.getElementById('growth-input').value;
+    let weight = document.getElementById('weight-input').value;
+    let dateOfBirth = document.getElementById('birth-input').value;
+}
+// =============================================================
