@@ -4,20 +4,36 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HABITS</title>
+ <title>HABITS</title>
 </head>
 
 <body>
-  <header></header>
-  <main>
-    <section>
-      <div class="habit_window-header">
-        <button class="s8_like_plusik">Назад</button>
+  <header>
+  <div class="user_photo">
+    <input id="photo-upload" type="file" accept="image/*">
+    <div id="preview"><img src="images/camera.png" alt="" id="avatarimage">
+    </div>
+    <span class="header_photo">Сменить фото</span>
+  </div>
+</header>
+<main>
+  <form action="">
+    <div class="inputs_data">
+      <div class="data_group">
+        <span class="form_inputs-text">Рост*</span>
+        <input class="form-inputs" id="growth-input" type="number" placeholder="170 см" required>
       </div>
-      <h4>Прогресс</h4>
-      <div id="myProgress">0<span id="myBar">%</span></div>
-      <button class="s8_btn_btr">Удалить привычку</button>
-    </section>
+      <div class="data_group">
+        <span class="form_inputs-text">Вес*</span>
+        <input class="form-inputs" id="weight-input" type="number" placeholder="50 кг" required>
+      </div>
+      <div class="data_group">
+        <span class="form_inputs-text">Дата Рождения*</span>
+        <input class="form-inputs" id="birth-input" type="date" placeholder="25. 09. 1986" required>
+      </div>
+    </div>
+    <button class="create-btn">Создать</button>
+  </form>
   </main>
   <footer></footer>
 </body>
