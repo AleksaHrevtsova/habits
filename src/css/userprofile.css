@@ -12,6 +12,8 @@ header {
   height: 154px;
   background-image: url(../images/mobile/back-wave.png);
   background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -36,20 +38,25 @@ header {
   align-items: center;
 }
 
-.header_photo {
+.upload-input {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+#avatarimage {
+  border: 1px solid #ffffff;
+  border-radius: 100%;
+  padding: 5px;
+}
+
+.header_photo-text {
   color: #ffffff;
   font-size: 1.2rem;
   font-family: "Candara";
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-form {
+main, form {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -85,6 +92,7 @@ form {
   width: 80px;
   height: 20px;
   text-align: center;
+  font-size: 1.8rem;
 }
 
 #birth-input {
@@ -92,6 +100,11 @@ form {
 }
 
 #birth-input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+.form-inputs::-webkit-inner-spin-button,
+.form-inputs::-webkit-outer-spin-button {
   display: none;
 }
 
@@ -107,7 +120,7 @@ form {
   display: flex;
   text-align: center;
   background-color: #ffffff;
-  color: #7355a8;
+  color: #390e84;
   font-size: 2rem;
   font-family: "Candara";
   font-weight: bold;
@@ -122,6 +135,223 @@ footer {
   display: flex;
   background-image: url(../images/mobile/bottom-lines.png);
   background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 100%;
   width: 100%;
   height: 69px;
+}
+
+@media only screen and (min-width: 425px) {
+  header {
+    height: 240px;
+  }
+
+  .user_photo {
+    padding-bottom: 30px;
+  }
+
+  #avatarimage {
+    width: 56px;
+    height: 56px;
+  }
+
+  .header_photo-text {
+    font-size: 2rem;
+  }
+
+  form {
+    height: 420px;
+    justify-content: space-between;
+  }
+
+  .inputs_data {
+    height: 300px;
+    margin: 0px;
+  }
+
+  footer {
+    height: 110px;
+  }
+}
+
+@media only screen and (min-width: 550px) {
+  header {
+    height: 240px;
+    background-image: url(../images/tablet/back-widewave.png);
+  }
+
+  .user_photo {
+    padding-bottom: 50px;
+  }
+
+  #avatarimage {
+    width: 64px;
+    height: 64px;
+  }
+
+  form {
+    height: 580px;
+  }
+
+  .inputs_data {
+    height: 460px;
+    margin-bottom: 80px;
+  }
+
+  .data_group {
+    height: 120px;
+  }
+
+  .header_photo-text, .form-inputs::placeholder,
+  .form_inputs-text, #birth-input, .form-inputs {
+    font-size: 2.5rem;
+  }
+
+  .form-inputs {
+    height: 60px;
+    width: 170px;
+  }
+
+  #birth-input {
+    width: 205px;
+  }
+
+  .create-btn {
+    width: 262px;
+    height: 50px;
+    border-radius: 0px;
+    padding: 3px 0px 0px 80px;
+    font-size: 3rem;
+  }
+
+  footer {
+    background-image: url(../images/tablet/bottom-lines.png);
+    background-size: 100%;
+    height: 137px;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  header {
+    height: 310px;
+    background-image: url(../images/tablet/back-widewave.png);
+  }
+
+  .user_photo {
+    padding-bottom: 30px;
+  }
+
+  #avatarimage {
+    width: 80px;
+    height: 80px;
+  }
+
+  form {
+    height: 580px;
+  }
+
+  .inputs_data {
+    height: 460px;
+    margin-bottom: 80px;
+  }
+
+  .data_group {
+    height: 120px;
+  }
+
+  .header_photo-text, .form-inputs::placeholder,
+  .form_inputs-text, #birth-input {
+    font-size: 3rem;
+  }
+
+  .form-inputs {
+    height: 60px;
+    width: 170px;
+  }
+
+  #birth-input {
+    width: 205px;
+  }
+
+  .create-btn {
+    width: 262px;
+    height: 50px;
+    border-radius: 0px;
+    padding: 3px 0px 0px 80px;
+    font-size: 3rem;
+  }
+
+  footer {
+    background-image: url(../images/tablet/bottom-lines.png);
+    background-size: 100%;
+    height: 160px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  body {
+    background-image: url(../images/desktop/topwaves-desk.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+  }
+
+  header{
+    background-image: none;
+    height: 385px;
+  }
+
+  .user_photo {
+    padding: 0px;
+  }
+
+  #avatarimage {
+    width: 160px;
+    height: 160px;
+    padding: 15px;
+  }
+
+  main {
+    height: 850px;
+  }
+
+  form {
+    height: 725px;
+  }
+
+  .inputs_data {
+    margin-bottom: 127px;
+    height: 525px;
+  }
+
+  .data_group {
+    height: 160px;
+  }
+
+  .form-inputs, #birth-input {
+    font-size: 4rem;
+    width: 663px;
+    border-bottom: 3px solid #c4c4c4;
+  }
+
+  .header_photo-text, .form-inputs::placeholder, #birth-input {
+    font-size: 4rem;
+  }
+
+  .form_inputs-text {
+    font-size: 4.5rem;
+  }
+
+  .create-btn {
+    font-size: 4.5rem;
+    width: 364px;
+    height: 70px;
+    padding: 0px 0px 0px 105px;
+    margin: 0px;
+  }
+
+  footer {
+    display: none;
+    background-image: none;
+  }
 }
