@@ -1,10 +1,14 @@
 
+import css from "../../css/style.css";
+
+
 // const growthInput = document.getElementById("growth-input"),
 //   weightInput = document.getElementById("weight-input"),
 //   birthInput = document.getElementById("birth-input"),
 //   createBtn = document.getElementById("create-btn");
 
 import '../../css/userprofile.css'
+
 
 
 // ====================== renata
@@ -21,11 +25,13 @@ console.log(delButton);
 
 const users1 = [{ id: "1" }];
 
+
+
 // создаем прослушку для кнопки удалить
 function removeChild(id) {
-  if(users1.filter(users1.id === id)) {
-    users1.remove();
-   };
+  users1.filter((user, index) =>{ user.id === id
+    users1.splice(index, 1);
+  });
 };
 delButton.addEventListener("click", removeChild);
 
@@ -53,7 +59,11 @@ class Habit  {
 const startDay = new Date('Oct 30 2020')
 
 const myHabit = new Habit(startDay, 21)
+
+console.log(myHabit)
+
 console.log(myHabit)
 
 //
+
 
