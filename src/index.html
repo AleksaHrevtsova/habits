@@ -63,6 +63,7 @@
     <footer></footer>
   </body>
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -116,8 +117,9 @@
 <body>
   <header>
     <div class="user_photo">
-      <button id="photo-upload" type="file" accept="image/*"><img src="images/camera.png" alt=""></button>
-      <span class="header_photo">Сменить фото</span>
+      <input id="photo-upload" class="upload-input" type="file" accept="image/*">
+      <img src="images/camera.png" alt="" id="avatarimage">
+      <span class="header_photo-text">Сменить фото</span>
     </div>
   </header>
   <main>
@@ -125,99 +127,20 @@
       <div class="inputs_data">
         <div class="data_group">
           <span class="form_inputs-text">Рост*</span>
-          <input class="form-inputs" id="growth-input" type="number" placeholder="170 см" required>
+          <input class="form-inputs" id="growth-input" type="number" placeholder="170 см" required autocomplete="off">
         </div>
         <div class="data_group">
           <span class="form_inputs-text">Вес*</span>
-          <input class="form-inputs" id="weight-input" type="number" placeholder="50 кг" required>
+          <input class="form-inputs" id="weight-input" type="number" placeholder="50 кг" required autocomplete="off">
         </div>
         <div class="data_group">
           <span class="form_inputs-text">Дата Рождения*</span>
-          <input class="form-inputs" id="birth-input" type="date" placeholder="25. 09. 1986" required>
+          <input class="form-inputs" id="birth-input" type="date" placeholder="25. 09. 1986" required autocomplete="off">
         </div>
       </div>
       <button class="create-btn">Создать</button>
     </form>
   </main>
-
-  <header>Hello World!</header>
-  <main></main>
-
-  <div id="header_desktop">
-    <p>Mой аккаунт</p>
-  </div>
-  <div id="bodyForDesktop">
-  <header>
-    <div>
-      <div id="headerText">
-        <h1 id="headerName">Новая Привичка</h1>
-        <p id="plas">+</p>
-      </div>
-      <div id="nameOfhabit">
-        <p>Название</p>
-        <div id="divInputHabit">
-          <input id="inputHabit" type="text" placeholder="Зарядка">
-          <div id="nameOfhabitUnderline"></div>
-        </div>
-      </div>
-    </div>
-  </header>
-
-  <div id="mainForDesktop">
-      <main id="main">
-        <div id="MotivateMyself">
-          <p>Мотивирую себя</p>
-          <input class="inputStyle" type="text" placeholder="...">
-        </div>
-        <div class="inputUnderline"></div>
-
-        <div class="main_div">
-          <p>Повторять</p>
-          <select id="reapitMesenge">
-            <option>каждый день</option>
-            <option>каждый час</option>
-          </select>
-        </div>
-        <div class="inputUnderline"></div>
-
-        <div class="main_div">
-          <p>Выберете цвет</p>
-          <input type="color" id="color" value="#390093">
-        </div>
-        <div class="inputUnderline"></div>
-
-        <div class="main_div" id="repit">
-          <p>Напомнить мне</p>
-          <label class="switch">
-            <input type="checkbox">
-            <span class="slider round"></span>
-          </label>
-        </div>
-        <div class="inputUnderline"></div>
-
-      </main>
-
-      <footer>
-        <button>Сохранить</button>
-      </footer>
-    </div>
-  </div>
-
-  <header></header>
-  <main>
-    <section>
-      <div class="habit_window-header">
-        <button class="s8_like_plusik">Назад</button>
-      </div>
-      <h4>Прогресс</h4>
-      <div id="myProgress">0<span id="myBar">%</span></div>
-      <button class="s8_btn_btr">Удалить привычку</button>
-    </section>
-  </main>
-
   <footer></footer>
-
 </body>
-
-
 </html>

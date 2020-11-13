@@ -7,7 +7,7 @@ import css from "../../css/style.css";
 //   birthInput = document.getElementById("birth-input"),
 //   createBtn = document.getElementById("create-btn");
 
-import css from '../../css/userprofile.css'
+import '../../css/userprofile.css'
 
 
 
