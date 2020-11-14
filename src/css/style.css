@@ -35,8 +35,16 @@ div {
 .logo-wrapper {
   padding: 60px 0 110px 0;
 }
-.logo-wrapper img{
+.logo-wrapper img {
   width: 260px;
+}
+.auth-motivation {
+  display: none;
+  font-size: 25px;
+  letter-spacing: 1px;
+  color: #390e84;
+  font-family: "Candara";
+  text-align: center;
 }
 .auth-buttons {
   padding-bottom: 214px;
@@ -60,6 +68,53 @@ div {
   font-family: "Candara";
 }
 
-.loginBtn::first-letter {
+.loginBtn::first-letter,
+.auth-motivation::first-letter {
   text-transform: capitalize;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+  .auth {
+    min-height: 1030px;
+    background-image: url(../images/tablet/back-widewave.png);
+  }
+  .logo-wrapper {
+    padding: 100px 0 0 0;
+  }
+  .logo-wrapper img {
+    width: 590px;
+  }
+  .auth-motivation {
+    display: block;
+    padding-bottom: 110px;
+    font-size: 25px;
+    letter-spacing: 1px;
+    color: #390e84;
+    font-family: "Candara";
+    text-align: center;
+  }
+  .auth-buttons {
+    padding-bottom: 0;
+  }
+  .loginBtn:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .loginBtn {
+    width: 366px;
+    height: 65px;
+    border-radius: 19px;
+    background-color: rgba(234, 231, 242, 0.5019607843137255);
+    border: 1px solid #390e84;
+    font-size: 30px;
+    letter-spacing: 1px;
+    color: #390e84;
+    font-weight: bold;
+    font-family: "Candara";
+  }
+}
+
+@media screen and (min-width: 1920px) {
 }
