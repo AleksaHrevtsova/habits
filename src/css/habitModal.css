@@ -7,7 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
-html {
+/* html {
   margin: 0;
 }
 
@@ -23,7 +23,7 @@ header {
   background-color: var(--main-bg-color);
   color: #fff;
   height: 100%;
-}
+} */
 
 /* heder */
 
@@ -226,24 +226,24 @@ input:checked + .slider:before {
 
 /* footer */
 
-footer {
+/* footer {
   display: flex;
   justify-content: center;
   margin-top: 100px;
-}
+} */
 
-footer button {
+/* footer button {
   border: solid #d4d4d4 1px;
   padding: 10px 90px;
   border-radius: 30px;
   color: var(--main-color);
   outline: 0;
-}
+} */
 
 @media only screen and (max-width: 280px){
-  body{
+  /* body{
       width: 280px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 700px){
@@ -276,11 +276,11 @@ footer button {
     display: flex;
   }
 
-  body{
+  /* body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-  }
+  } */
 
   #bodyForDesktop{
     display: flex;
@@ -290,7 +290,7 @@ footer button {
     margin-top: 50px;
   }
 
-  header{
+  /* header{
     width: 450px;
     height: 450px;
     border-radius: 20px;
@@ -298,7 +298,7 @@ footer button {
 
   header div{
     height: 300px;
-  }
+  } */
 
   #nameOfhabit div{
     width: auto;

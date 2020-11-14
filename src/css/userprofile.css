@@ -1,13 +1,8 @@
-* {
-  margin: 0px;
-  padding: 0px;
-}
-
-html {
+/* html {
   font-size: 10px;
-}
+} */
 
-header {
+/* header {
   width: 100%;
   height: 154px;
   background-image: url(../images/mobile/back-wave.png);
@@ -18,7 +13,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .user_photo {
   display: flex;
@@ -56,12 +51,12 @@ header {
   font-family: "Candara";
 }
 
-main, form {
+/* main, form {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .inputs_data {
   margin-bottom: 50px;
@@ -131,7 +126,7 @@ main, form {
   margin-bottom: 10px;
 }
 
-footer {
+/* footer {
   display: flex;
   background-image: url(../images/mobile/bottom-lines.png);
   background-repeat: no-repeat;
@@ -139,12 +134,12 @@ footer {
   background-size: 100%;
   width: 100%;
   height: 69px;
-}
+} */
 
 @media only screen and (min-width: 425px) {
-  header {
+  /* header {
     height: 240px;
-  }
+  } */
 
   .user_photo {
     padding-bottom: 30px;
@@ -159,26 +154,26 @@ footer {
     font-size: 2rem;
   }
 
-  form {
+  /* form {
     height: 420px;
     justify-content: space-between;
-  }
+  } */
 
   .inputs_data {
     height: 300px;
     margin: 0px;
   }
 
-  footer {
+  /* footer {
     height: 110px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 550px) {
-  header {
+  /* header {
     height: 240px;
     background-image: url(../images/tablet/back-widewave.png);
-  }
+  } */
 
   .user_photo {
     padding-bottom: 50px;
@@ -188,10 +183,10 @@ footer {
     width: 64px;
     height: 64px;
   }
-
+/*
   form {
     height: 580px;
-  }
+  } */
 
   .inputs_data {
     height: 460px;
@@ -224,19 +219,19 @@ footer {
     font-size: 3rem;
   }
 
-  footer {
+  /* footer {
     background-image: url(../images/tablet/bottom-lines.png);
     background-size: 100%;
     height: 137px;
-  }
+  } */
 }
 
 
 @media only screen and (min-width: 768px) {
-  header {
+  /* header {
     height: 310px;
     background-image: url(../images/tablet/back-widewave.png);
-  }
+  } */
 
   .user_photo {
     padding-bottom: 30px;
@@ -247,9 +242,9 @@ footer {
     height: 80px;
   }
 
-  form {
+  /* form {
     height: 580px;
-  }
+  } */
 
   .inputs_data {
     height: 460px;
@@ -282,11 +277,11 @@ footer {
     font-size: 3rem;
   }
 
-  footer {
+  /* footer {
     background-image: url(../images/tablet/bottom-lines.png);
     background-size: 100%;
     height: 160px;
-  }
+  } */
 }
 
 @media only screen and (min-width: 1024px) {
@@ -296,10 +291,10 @@ footer {
     background-position: center top;
   }
 
-  header{
+  /* header{
     background-image: none;
     height: 385px;
-  }
+  } */
 
   .user_photo {
     padding: 0px;
@@ -310,14 +305,14 @@ footer {
     height: 160px;
     padding: 15px;
   }
-
+/*
   main {
     height: 850px;
-  }
+  } */
 
-  form {
+  /* form {
     height: 725px;
-  }
+  } */
 
   .inputs_data {
     margin-bottom: 127px;
@@ -350,8 +345,8 @@ footer {
     margin: 0px;
   }
 
-  footer {
+  /* footer {
     display: none;
     background-image: none;
-  }
+  } */
 }
