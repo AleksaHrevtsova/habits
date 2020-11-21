@@ -1,11 +1,4 @@
-.header {
-  /* background: none; */
-}
-.header-left-btn {
+.signUp,
+.signIn {
   display: none;
 }
-
-.createAcc {
-  display: none;
-}
-

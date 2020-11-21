@@ -4,162 +4,156 @@
 
 */
 @media screen and (min-width: 320px) {
-    #habitInfo_cover {
-        position: relative;
-        color: black;
-        width: 100%;
-        height: 550px;
-        background-color: #ffff;
+  #habitInfo_cover {
+    position: relative;
+    color: black;
+    width: 100%;
+    height: 550px;
+    background-color: #ffff;
+  }
 
-    }
+  #habitInfo_header {
+    height: 65px;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+    width: 100%;
 
-    #habitInfo_header {
-        text-align: center;
-        height: 65px;
-        border: none;
+    background: linear-gradient(
+      to right,
+      rgb(106, 83, 165),
+      rgb(173, 129, 209)
+    );
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+  }
 
-        background: rgb(113, 79, 169);
-        background: linear-gradient(90deg, rgb(113, 79, 169) 0%, rgba(188, 129, 213, 1) 100%);
+  .habitInfo-button {
+    font-size: 14px;
+    display: block;
+    color: #ffffff;
+    background: transparent;
+    border: none;
+  }
 
-        -webkit-border-bottom-right-radius: 10px;
-        -webkit-border-bottom-left-radius: 10px;
-        -moz-border-radius-bottomright: 10px;
-        -moz-border-radius-bottomleft: 10px;
-        border-bottom-right-radius: 10px;
-        border-bottom-left-radius: 10px;
-    }
+  #habitInfo_habitName {
+    color: #ffffff;
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+  }
 
-    .habitInfo-button {
-        font-size: 14px;
-        display: inline-block;
-        margin: 20px 5% 0 5%;
-        color: #ffffff;
-        background-color: rgba(255, 255, 255, 0);
-        border: none;
+  #habitInfo_main {
+    text-align: center;
+  }
 
-    }
+  #habitInfo_main-title {
+    font-size: 19px;
+    font-weight: bold;
+    padding-bottom: 30%;
+  }
 
-    #habitInfo_habitName {
-        color: #ffffff;
-        display: inline-block;
-        font-size: 16px;
-        font-weight: bold;
-        margin: 0 20px 0 20px
-    }
+  #habitInfo_main-progress {
+    font-size: 45px;
+  }
 
-    #habitInfo_main {
-        text-align: center;
-    }
+  #habitInfo_footer {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    bottom: 0px;
+    width: 100%;
+  }
 
-    #habitInfo_main-title {
-        font-size: 19px;
-        font-weight: bold;
-        padding-bottom: 30%;
-    }
+  .habitInfo-deleteButton {
+    color: #400688;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.1);
+    margin: 5px 0 10px 0;
+    border: none;
+    border: 1px solid #000000;
+    border-radius: 35px;
+    padding: 15px;
+    width: 300px;
+  }
+  #habitInfo_table_calendar {
+    margin: 10px auto;
+    width: 85%;
+    text-align: center;
+  }
+  #habitInfo_table_calendar thead tr:last-child {
+    font-size: 15px;
+    line-height: 10px;
+    color: #4b2486;
+    font-family: "Myriad Pro";
+    text-align: center;
+  }
+  #habitInfo_table_calendar thead tr:nth-child(1) td:nth-child(1):hover,
+  #habitInfo_calendar_table thead tr:nth-child(1) td:nth-child(3):hover {
+    cursor: pointer;
+  }
+  #habitInfo_table_calendar thead tr:nth-child(1) td:nth-child(2) {
+    font-size: 30px;
+    color: #400688;
+    font-family: "Candara";
+  }
+  #habitInfo_table_calendar tbody td {
+    font-size: 15px;
+    line-height: 12px;
+    color: #6e6767;
+    font-family: "Myriad Pro";
+    text-align: center;
+  }
+  #habitInfo_table_calendar tbody td:nth-child(n + 6),
+  #calendar2 .holiday {
+    color: rgb(231, 140, 92);
+  }
+  #habitInfo_table_calendar tbody td.today {
+    width: 12px;
+    background: #400688;
+    border: #400688 solid 5px;
+    border-radius: 400px;
+    color: #fff;
+  }
 
-    #habitInfo_main-progress {
-        font-size: 45px;
-    }
-
-    #habitInfo_footer {
-        position: absolute;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: center;
-        justify-content: center;
-        bottom: 0px;
-        width: 100%;
-    }
-
-    .habitInfo-deleteButton {
-        color: #400688;
-        display: block;
-        background-color: rgba(255, 255, 255, 0.1);
-        margin: 5px 0 10px 0;
-        border: none;
-        border: 1px solid #000000;
-        border-radius: 35px;
-        padding: 15px;
-        width: 300px;
-    }
-    #habitInfo_table_calendar {
-        margin:10px auto;
-        width: 85%;
-        text-align: center;
-      }
-      #habitInfo_table_calendar thead tr:last-child {
-        font-size: 15px;
-      line-height: 10px;
-      color: #4b2486;
-      font-family: "Myriad Pro";
-      text-align: center;
-
-      }
-      #habitInfo_table_calendar thead tr:nth-child(1) td:nth-child(1):hover, #habitInfo_calendar_table thead tr:nth-child(1) td:nth-child(3):hover {
-        cursor: pointer;
-      }
-      #habitInfo_table_calendar thead tr:nth-child(1) td:nth-child(2) {
-        font-size: 30px;
-        color: #400688;
-        font-family: "Candara";
-      }
-      #habitInfo_table_calendar tbody td {
-        font-size: 15px;
-      line-height: 12px;
-      color: #6e6767;
-      font-family: "Myriad Pro";
-      text-align: center;
-
-      }
-      #habitInfo_table_calendar tbody td:nth-child(n+6), #calendar2 .holiday {
-        color: rgb(231, 140, 92);
-      }
-      #habitInfo_table_calendar tbody td.today {
-        width: 12px;
-        background: #400688;
-        border:#400688 solid 5px;
-        border-radius: 400px;
-        color: #fff;
-      }
-
-    /* media */
+  /* media */
 }
 
 @media screen and (min-width: 720px) {
-    #habitInfo_main-title {
-        padding: 0 0 15% 0;
-    }
+  #habitInfo_main-title {
+    padding: 0 0 15% 0;
+  }
 
-    .habitInfo-deleteButton {
-        margin-right: 35px;
-    }
+  .habitInfo-deleteButton {
+    margin-right: 35px;
+  }
 
-    #habitInfo_table_calendar {
-        margin:10px auto;
-        width: 60%;
-        text-align: center;
-      }
+  #habitInfo_table_calendar {
+    margin: 10px auto;
+    width: 60%;
+    text-align: center;
+  }
 
-
-    /* media */
+  /* media */
 }
 
 @media screen and (min-width: 1920px) {
-    #habitInfo_header{
-        height: 100px;
-    }
-    #habitInfo_habitName{
-        font-size: 32px;
-        margin: 28px 0 0 0;
-    }
-    #habitInfo_main-title {
-        padding: 0 0 8% 0;
-    }
-    .habitInfo-button{
-        margin: 1% 20% 0 20%;
-        font-size: 25px;
-    }
-    
+  #habitInfo_header {
+    height: 100px;
+  }
+  #habitInfo_habitName {
+    font-size: 32px;
+    margin: 28px 0 0 0;
+  }
+  #habitInfo_main-title {
+    padding: 0 0 8% 0;
+  }
+  .habitInfo-button {
+    margin: 1% 20% 0 20%;
+    font-size: 25px;
+  }
 
-    /* media */
+  /* media */
 }
