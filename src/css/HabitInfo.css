@@ -50,7 +50,7 @@
   #habitInfo_main-title {
     font-size: 19px;
     font-weight: bold;
-    padding-bottom: 30%;
+    padding-bottom: 15%;
   }
 
   #habitInfo_main-progress {
@@ -84,8 +84,7 @@
     text-align: center;
   }
   #habitInfo_table_calendar thead tr:last-child {
-    font-size: 15px;
-    line-height: 10px;
+    font-size: 20px;
     color: #4b2486;
     font-family: "Myriad Pro";
     text-align: center;
@@ -101,7 +100,7 @@
   }
   #habitInfo_table_calendar tbody td {
     font-size: 15px;
-    line-height: 12px;
+
     color: #6e6767;
     font-family: "Myriad Pro";
     text-align: center;
@@ -123,32 +122,44 @@
 
 @media screen and (min-width: 720px) {
   #habitInfo_main-title {
-    padding: 0 0 15% 0;
+    padding: 0 0 5% 0;
+    font-size: 25px;
   }
 
   .habitInfo-deleteButton {
     margin-right: 35px;
+    width: 60%;
   }
 
   #habitInfo_table_calendar {
     margin: 10px auto;
-    width: 60%;
+    width: 600px;
     text-align: center;
   }
-
+  #habitInfo_main-progress{
+    font-size: 60px;
+  }
+  #habitInfo_table_calendar tbody td {
+    font-size: 20px;
+  }
   /* media */
 }
 
-@media screen and (min-width: 1920px) {
-  #habitInfo_header {
-    height: 100px;
-  }
+@media screen and (min-width: 1024px) {
   #habitInfo_habitName {
     font-size: 32px;
     margin: 28px 0 0 0;
   }
   #habitInfo_main-title {
     padding: 0 0 8% 0;
+  }
+  #habitInfo_table_calendar tbody td {
+    font-size: 23px;
+  }
+  #habitInfo_table_calendar {
+    width: 800px;
+    margin: 0;
+    text-align: center;
   }
   .habitInfo-button {
     margin: 1% 20% 0 20%;
