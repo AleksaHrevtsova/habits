@@ -1,19 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 /* ето переменная! и если изменить переменную то изменится основной цвет страницы  */
 :root {
   --main-color: #390093;
   /* нужно изменять только --main-bg-color */
   --main-bg-color: #390093;
+  /* main font */
+  --main-font: var(--main-font);
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
 
-body {
+/* body {
   background-color: white;
   color: var(--main-color);
   margin: 0;
-  font-family: "Montserrat";
+  font-family: var(--main-font);
   font-size: 16px;
-}
+} */
 
 .habitModal-header {
   background-color: var(--main-bg-color);
@@ -44,7 +46,7 @@ body {
 
 #inputHabit {
   width: 100%;
-  font-family: "Montserrat";
+  font-family: var(--main-font);
   color: #fff;
 }
 
@@ -53,7 +55,6 @@ body {
   padding-bottom: 15px;
   display: flex;
   flex-direction: column;
-  align-items: start;
   justify-self: center;
 }
 
@@ -120,15 +121,15 @@ body {
   transition: 0.4s;
 }
 
-input:checked + .slider {
+#toggleInputForRepiat:checked + .slider {
   background-color: var(--main-color);
 }
 
-input:focus + .slider {
+#toggleInputForRepiat:focus + .slider {
   box-shadow: 0 0 1px var(--main-color);
 }
 
-input:checked + .slider:before {
+#toggleInputForRepiat:checked + .slider:before {
   -webkit-transform: translateX(26px);
   -ms-transform: translateX(26px);
   transform: translateX(26px);
@@ -177,16 +178,16 @@ input:checked + .slider:before {
   margin-bottom: 2px;
   text-decoration: none;
   border: none;
-  font-family: "Montserrat";
+  font-family: var(--main-font);
   color: var(--main-color);
   outline: 0;
   outline-offset: 0;
 }
 
 #reapitMesenge {
-  width: 140px;
+  width: 120px;
   color: var(--main-color);
-  font-family: "Montserrat";
+  font-family: var(--main-font);
   font-size: 16px;
   outline: 0;
   outline-offset: 0;
@@ -236,7 +237,10 @@ input:checked + .slider:before {
   border-radius: 30px;
   color: var(--main-color);
   outline: 0;
+  margin-top: auto;
+  margin-bottom: 60px;
 }
+
 #bodyForDesktop {
   display: flex;
   /* flex-direction: row-reverse; */
@@ -247,19 +251,27 @@ input:checked + .slider:before {
   background-repeat: no-repeat;
   background-position: bottom;
 }
-@media only screen and (max-width: 280px) {
-  body {
-    width: 280px;
-  }
-}
 
-@media only screen and (min-width: 700px) {
+
+@media only screen and (min-width: 768px) {
   #main {
     width: 450px;
     margin: 0 auto;
   }
 
   #nameOfhabit {
+    width: 535px;
+  }
+
+  .habitModal-header{
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  #inputHabit{
     width: 535px;
   }
 }
@@ -282,7 +294,7 @@ input:checked + .slider:before {
   align-items: center;
 }
 
-@media only screen and (min-width: 1480px) {
+@media only screen and (min-width: 1920px) {
   #header_desktop {
     display: flex;
   }
